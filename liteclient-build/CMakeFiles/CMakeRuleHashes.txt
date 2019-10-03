@@ -1,0 +1,18 @@
+# Hashes of file build rules.
+611fcf0f7a56d24fb029ba3afd45937b /home/user/Документы/git/ton2/lite-client/crypto/block/block-auto.cpp
+95ac8c0206db6bacf2e3b1846755523e /home/user/Документы/git/ton2/lite-client/crypto/smartcont/config-code.fif
+1926439afb99dd5093574613bd50df04 /home/user/Документы/git/ton2/lite-client/crypto/smartcont/elector-code.fif
+987e60b73d1968338f521ec4407fa537 /home/user/Документы/git/ton2/lite-client/crypto/smartcont/highload-wallet-code.fif
+16903c0bd1c0b21c75c5b1cc5c2df5dc /home/user/Документы/git/ton2/lite-client/crypto/smartcont/highload-wallet-v2-code.fif
+2fffb512c24107487729ab7dd01e1f42 /home/user/Документы/git/ton2/lite-client/crypto/smartcont/simple-wallet-code.fif
+54c0678c7c690c701339540bf56902da /home/user/Документы/git/ton2/lite-client/crypto/smartcont/wallet-code.fif
+d95ac8f9fe80053bd9c12d4a8be6ccf4 /home/user/Документы/git/ton2/lite-client/tl/generate/auto/tl/ton_api.cpp
+42cd8945d057597e2e122d9744e80e96 CMakeFiles/prepare_cross_compiling
+5ba838e3923380ad81d94437c776adc8 crypto/CMakeFiles/gen_fif_smartcont_config_code_fif
+5ba838e3923380ad81d94437c776adc8 crypto/CMakeFiles/gen_fif_smartcont_elector_code_fif
+5ba838e3923380ad81d94437c776adc8 crypto/CMakeFiles/gen_fif_smartcont_highload_wallet_code_fif
+5ba838e3923380ad81d94437c776adc8 crypto/CMakeFiles/gen_fif_smartcont_highload_wallet_v__code_fif
+5ba838e3923380ad81d94437c776adc8 crypto/CMakeFiles/gen_fif_smartcont_simple_wallet_code_fif
+5ba838e3923380ad81d94437c776adc8 crypto/CMakeFiles/gen_fif_smartcont_wallet_code_fif
+5ba838e3923380ad81d94437c776adc8 crypto/CMakeFiles/tlb_generate_block
+7e1fd220ffb479ebc1c479cdca82be2e tl/generate/CMakeFiles/tl_generate_common

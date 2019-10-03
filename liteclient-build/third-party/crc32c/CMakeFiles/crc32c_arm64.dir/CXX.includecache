@@ -1,0 +1,40 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/user/Документы/git/ton2/lite-client/third-party/crc32c/src/./crc32c_arm64.h
+cstddef
+-
+cstdint
+-
+crc32c/crc32c_config.h
+/home/user/Документы/git/ton2/lite-client/third-party/crc32c/src/./crc32c/crc32c_config.h
+
+/home/user/Документы/git/ton2/lite-client/third-party/crc32c/src/./crc32c_internal.h
+cstddef
+-
+cstdint
+-
+
+/home/user/Документы/git/ton2/lite-client/third-party/crc32c/src/crc32c_arm64.cc
+./crc32c_arm64.h
+/home/user/Документы/git/ton2/lite-client/third-party/crc32c/src/./crc32c_arm64.h
+cstddef
+-
+cstdint
+-
+./crc32c_internal.h
+/home/user/Документы/git/ton2/lite-client/third-party/crc32c/src/./crc32c_internal.h
+crc32c/crc32c_config.h
+/home/user/Документы/git/ton2/lite-client/third-party/crc32c/src/crc32c/crc32c_config.h
+arm_acle.h
+-
+arm_neon.h
+-
+
+third-party/crc32c/include/crc32c/crc32c_config.h
+

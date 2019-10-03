@@ -1,0 +1,2 @@
+/usr/bin/ar qc libtl-utils.a  CMakeFiles/tl-utils.dir/tl-utils.cpp.o
+/usr/bin/ranlib libtl-utils.a

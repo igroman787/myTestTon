@@ -1,0 +1,2 @@
+/usr/bin/ar qc liblite-client-common.a  CMakeFiles/lite-client-common.dir/lite-client-common.cpp.o
+/usr/bin/ranlib liblite-client-common.a
