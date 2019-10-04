@@ -10,9 +10,10 @@ mkdir ton && cd ton
 myTonFolder=$(pwd)
 ```
 
-3. Загрузить архив исходников
+3. Загрузить архив исходников и разархиваировать его
 ```bash
 wget https://test.ton.org/ton-test-liteclient-full.tar.xz
+tar xf ton-test-liteclient-full.tar.xz
 ```
 
 4. Создать папку для сборки из исходников
