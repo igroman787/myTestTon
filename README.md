@@ -1,55 +1,56 @@
 # myTestTon
 
 1. Создаем папку для тестов сети TON
-```
+```bash
 mkdir ton && cd ton
 ```
 
 2. Создадим переменную содержайщий абсолютный путь нашей папки ton
-```
+```bash
 myTonFolder=$(pwd)
 ```
 
 3. Загрузить архив исходников
-```
+```bash
 wget https://test.ton.org/ton-test-liteclient-full.tar.xz
 ```
 
 4. Создать папку для сборки из исходников
-```
+```bash
 mkdir liteclient-build && cd liteclient-build
 ```
 
 5. Компилируем клиент и интерпритатор fift
-```
+```bash
 cmake ../lite-client
 cmake --build . --target lite-client
 cmake --build . --target fift
 ```
 
 6. Скачать конфигурационный файл для клиента
-```
+```bash
 wget https://test.ton.org/ton-lite-client-test1.config.json
 ```
 
 7. Создать переменные содержащие абсолютный путь к тестовому клиенту и файлу конфигурации
-```
+```bash
 myTestTonClientConfigFile=$(find $myTonFolder -name "ton-lite-client-test1.config.json")
 myTestTonClient=$(echo "$myTonFolder/liteclient-build/lite-client/lite-client -C $myTestTonClientConfigFile")
 ```
 
 8. Запустить клиент (выход из клиента Ctrl-C)
-```
+```bash
 $myTestTonClient
 ```
 
 9. Вызвать список доступных команд и выход из клиента
-```ton> help
+```bash
+ton> help
 ^C
 ```
 
 10. Создадим новый кошелек
-```
+```bash
 myLib=$(echo $myTonFolder/lite-client/crypto/fift/lib)
 myNWfif=$(echo $myTonFolder/lite-client/crypto/smartcont/new-wallet.fif)
 myFift=$(echo $myTonFolder/liteclient-build/crypto/fift)
@@ -69,7 +70,7 @@ $myFift -I"$myLib" -s "$myNWfif" 0 myWallet_001
 12. Запросим у телеграм бота (@test_ton_bot) тестовые граммы. Отправим боту наш адрес "0QAPNPFDdGgK9vN1a_NbIuxg_t9ozvbwMevJWIrb9amyMe4t". Нужно подождать несколько минут, пока граммы будут зачислены.
 
 13. Посмотрим баланс и статус нашего кошелька
-```
+```bash
 $myTestTonClient
 ton> last
 ton> getaccount 0:f34f14374680af6f3756bf35b22ec60fedf68cef6f031ebc9588adbf5a9b231
@@ -83,20 +84,20 @@ ton> getaccount 0:f34f14374680af6f3756bf35b22ec60fedf68cef6f031ebc9588adbf5a9b23
 ```
 
 15. Инициализируем наш кошелек в сети TON
-```
+```bash
 $myTestTonClient
 ton> sendfile myWallet_001-query.boc
 ^C
 ```
 
 16. Создадим контракт на передачу грам в другой кошелек
-```
+```bash
 mySmartcontFolder=$(echo $myTonFolder/lite-client/crypto/smartcont)
 $myFift -I"$myLib:$mySmartcontFolder" -s wallet.fif myWallet_001 0:ecb7498c3939633b520361bdf2b66ae62d61f61548f97091b7a90f647b7c664e 1 5
 ```
 
 17. Инициализируем наш контракт в сети TON
-```
+```bash
 $myTestTonClient
 ton> sendfile wallet-query.boc
 ```
