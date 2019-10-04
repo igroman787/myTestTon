@@ -100,4 +100,5 @@ $myFift -I"$myLib:$mySmartcontFolder" -s wallet.fif myWallet_001 0:ecb7498c39396
 ```bash
 $myTestTonClient
 ton> sendfile wallet-query.boc
+^C
 ```
