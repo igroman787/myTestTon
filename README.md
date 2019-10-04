@@ -71,6 +71,7 @@ $myFift -I"$myLib" -s "$myNWfif" 0 myWallet_001
 
 13. Посмотрим баланс и статус нашего кошелька
 ```bash
+$myTestTonClient
 ton> last
 ton> getaccount 0:f34f14374680af6f3756bf35b22ec60fedf68cef6f031ebc9588adbf5a9b231
 ^C
@@ -84,6 +85,7 @@ ton> getaccount 0:f34f14374680af6f3756bf35b22ec60fedf68cef6f031ebc9588adbf5a9b23
 
 15. Инициализируем наш кошелек в сети TON
 ```bash
+$myTestTonClient
 ton> sendfile myWallet_001-query.boc
 ^C
 ```
@@ -96,5 +98,6 @@ $myFift -I"$myLib:$mySmartcontFolder" -s wallet.fif myWallet_001 0:ecb7498c39396
 
 17. Инициализируем наш контракт в сети TON
 ```bash
+$myTestTonClient
 ton> sendfile wallet-query.boc
 ```
